@@ -1,23 +1,29 @@
 Question 1:
 What is an API?
-
+API abbreviated as application programming interface used as a interfacing layer defined for programs in public which in turn enables the communication with each other.
+api in my understanding is broker which acts as a bridge between two different clients
 
 Question 2:
 What is an endpoint?
-
+an endpoint is like directory in your local storage but over the internet database,
+eg- https://indianracingcommunity.co.in/xf1/1/7/standings (this is community which made me and frnds start our own coummunity axxel)
+xf1/1/7/standings is the endpoint (fr4nkenstein1 is my tag and currently sitting with 0 points)
 
 Question 3:
 What is a model?
-
+models are like source of the data,they will have all the flields and relationships of the instances of your data which helps communications with database
 
 Question 4:
 What is the requirements.txt file for?
-
+requirement.txt file is like a book_keeping process for a merchant , it keeps the tracks of softwares/pulgins used with their current version being used.
+this helps the new developer coming to work on the program be updated on what pulgins with their version used on the project.
 
 Question 5: (2 part question)
 What are blueprints used for?
+blueprints in my understanding are kind of like "DIVIDE AND RULE POLICY" , makes the code into small sizable chunks which in turn helps us to better understand the code and manage it.
 Is it possible to write a flask application without first defining blueprints?
-
+yes , its  possible for a demo projects with not may services i.e 1 or 2 but above that coding without blueprints would be still possible but wont be a smartest way do it.
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+in api/v1 , v1 is meant to be version 1 . moving on if the project gets updated in one way or other (updated to run efficiently than v1 or new features being added) the endpoint would be updated api/v2, just book_keeping
