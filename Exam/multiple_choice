@@ -12,14 +12,14 @@ ___Question 1: What keyword is used to reference null in python?___
 
 - Null []
 - null []
-- None []
+- None [X]
 - none []
 - zero []
 
 
 ___Question 2: What does SQLAlchemy allow you to do?___
 
-- Interact with your database []
+- Interact with your database [X]
 - Interact with your frontend []
 - Interact with your backend application (flask) []
 - Interact with the user's browser []
@@ -29,7 +29,7 @@ ___Question 2: What does SQLAlchemy allow you to do?___
 ___Question 3: Which best defines a 404 error?___
 
 - Your database returns a 404 when it cannot find the data that you are requesting []
-- Your code raises a 404 when it encounters an error []
+- Your code raises a 404 when it encounters an error [X]
 - An application server returns a 404 when the requested resource is not available []
 - The operating system sends a 404 error signal to your application when something went wrong []
 - 404 is not an error code, rather it signifies that the operation (whatever operation that is) was a success []
@@ -37,11 +37,11 @@ ___Question 3: Which best defines a 404 error?___
 
 ___Question 4: Which of the following statements is TRUE?___
 
-- Frontend code runs in the user's browser []
+- Frontend code runs in the user's browser [X]
 - Backend code runs in the user's browser []
 - Python is a frontend programming language []
 - The backend cannot interact with the database []
-- The database contains the application code []
+- The database contains the application code [X]
 
 
 ___Question 5: Which of the following statements is FALSE?___
@@ -50,5 +50,5 @@ ___Question 5: Which of the following statements is FALSE?___
 - PyCharm is an IDE (integrated development environment) []
 - Best practices for Python dictate that you should use one (1) virtual environment per codebase (project) []
 - POST requests are used to create new resources []
-- Path parameters and query parameters are interchangeable terms (they mean the same thing) []
+- Path parameters and query parameters are interchangeable terms (they mean the same thing) [X]
 
