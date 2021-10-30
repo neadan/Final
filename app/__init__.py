@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask 
 
 from app.books.routes import book_bp
 from app.models import db
