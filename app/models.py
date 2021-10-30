@@ -16,13 +16,24 @@ class Book:
     def to_dict(self):
         return {
             'id': self.id,
-            'title': self.brand,
-            'author': self.name,
+            'title': self.title,
+            'author': self.author,
             'year': self.year
         }
 
 # class Fiction here:
 
-# class NonFiction here:
+class Fiction(db.Model,Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
+    author = db.Column(db.String(50), nullable=False)
+    year = db.Column(db.Integer, nullable=False)
 
+
+# class NonFiction here:
+class Nonfiction(db.Model,Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
+    author = db.Column(db.String(50), nullable=False)
+    year = db.Column(db.Integer, nullable=False)
 

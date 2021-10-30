@@ -1,23 +1,34 @@
 Question 1:
 What is an API?
 
-
+API (Application Programming Interface) as the name refers it is an interfacing layer/set of rules(protocols) defined for programs in public which can easily communicate with each other.
+ Weather apps in the global locations collect data from a satellite signal server in NASA etc using an intermediate platform/set of written specific service or code. This is an API.
 Question 2:
 What is an endpoint?
+An endpoint is an unique resource locator that enables an API to access the requested resource from the server/service.
 
+For example, endpoint "https://groww.in/indices/nifty" is an URL or API endpoint of Groww application/service to fetch real time data of stock exchange Nifty.
 
 Question 3:
 What is a model?
 
+Models are the single source of truth about your data. Models will have all neccessary fields and relationships/behaviours of the data we are storing. in Flask/Django or any web framework it typically maps to a Database table.
 
 Question 4:
 What is the requirements.txt file for?
 
+When we start devoloping applications, we install definite version of packages which we needs part of setting up the application/service.But in future due to certain enhancements in the application we may need future releases of certain packages. It is mandatory to keep track on the versions of the packages, otherwise a new developer comes and try to make changes to the code without proper package versions there is a strong chance the application will break. Hence we sue requirements.txt to maintain what are the packages required and version of each.
 
 Question 5: (2 part question)
 What are blueprints used for?
-Is it possible to write a flask application without first defining blueprints?
+Blue Prints are used to organize our flask application into smaller and re-usable pieces of application. Also while using blueprints it will be much easier to debug our application as we creating the application small chunks of code.
 
+Is it possible to write a flask application without first defining blueprints?
+Yes we can write a flask application without defining a blueprints but it will be advised to use blueprints if you applications has many microservices involved into it.
+
+Example, if we have an application kind of Amazon or BestBuy due to large number of services these ecommerce site provides it is preferable to go with Blueprints. This also help to include or remove new features in your application by setting up minor releases as and when required. But if you application objective is a small service with just one function, flask app can be built without blueprint.
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+
+In this method of maintaining /api/v1, it will be helpful for the developer to include new enhancements with newer versions and during the same period end uses can still use v1 for their needs. Later after testing and prod release users can start use /api/v2. Also it will give agility to end user to choose his required version also, till it get fully retires from the code by developer.
