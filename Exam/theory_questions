@@ -1,23 +1,58 @@
 Question 1:
 What is an API?
+API stands for Application programming Interface, its a software software intermediary that allows two
+ applications to talk to each other.API lists a bunch of operations that developers can use, along with a description of what they do.
+ For Example, Imagine you’re sitting at a table in a restaurant with a menu of choices to order from. The kitchen is the part
+ of the “system” that will prepare your order. What is missing is the critical link to communicate your order to the kitchen and
+ deliver your food back to your table. That’s where the waiter/API comes in. The waiter is the messenger – or API – that takes your request or order and tells the kitchen
+ the system – what to do. Then the waiter delivers the response back to you; in this case, it is the food.
 
 
 Question 2:
 What is an endpoint?
 
+An API endpoint is a point at which an API, the code that allows two software programs to communicate with each other,
+connects with the software program. Its a point of entry in a communication channel when two systems are interacting.
+APIs work by sending requests for information from a web application/server and receive a response.
+In other words, API endpoints are the specific digital location where requests for information are sent by one program to retrieve the digital
+resource that exists there. Endpoints specify where APIs can access resources and help guarantee the proper functioning of the incorporated software.
+An API's performance depends on its capacity to successfully communicate with API endpoints.
 
 Question 3:
 What is a model?
+A model is an object that represents the data in your application.It contains the essential fields and behaviors of the data you're storing.
+An application describes the kinds of data it uses with models. A model is a Python class that inherits from the Model class.
+The model class defines a new Kind of datastore entity and the properties the Kind is expected to take.
+The Kind name is defined by the instantiated class name that inherits from db.Model.
+Generally, each model maps to a single database table,Each attribute of the model represents a database field.
 
 
 Question 4:
 What is the requirements.txt file for?
-
+In Python requirement. txt file is a type of file that usually stores information about all the libraries, modules, and packages in itself
+that are used while developing a particular project.Typically the requirements.txt file is located in the root directory of your project.
+This is important because as you start developing your python applications, you will develop the application with specific versions of the packages in mind.
+Later on, the package maintainer might make changes which would break your application.It is too much work to keep track of every downstream package change.
+Especially if it is a larger project.  So you want to keep track of what version of each package you are using to prevent unexpected changes.
 
 Question 5: (2 part question)
 What are blueprints used for?
 Is it possible to write a flask application without first defining blueprints?
+A Blueprint is a way to organize a group of related views and other code. Rather than registering views and other code directly with an application, they are
+registered with a blueprint. Then the blueprint is registered with the application when it is available in the factory function.
+An example of this would be Facebook. If Facebook used Flask, it might have blueprints for the static pages (i.e. signed-out home, register, about, etc.),
+ the dashboard (i.e. the news feed), profiles (/sandeep/about and /sandeep/photos), settings (/settings/security and /settings/privacy) and many more.
+These components all share a general layout and styles, but each has its own layout as well.
+
 
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+That is a naming convention they use to denote multiple versions of an API. So, in case tomorrow you build a new API, say with added security mechanism, you can change the URL to /v2 and don’t immediately
+stop /v1 as many users might already be using that.Good APIs are designed with backwards compatibility in mind. When enhancing/adding to an API, an API manager should make sure applications that already connect to that API are not affected.
+Some changes can be applied to existing APIs without breaking applications, such as adding new API endpoints or new optional parameters to an existing endpoint, but changes that fundamentally
+alter the structure of an API (changes to the way API endpoints are organized, changes to the output structure of an API) would break those applications that currently depend on the API.
+Sometimes an old API endpoint can be deprecated (still work for existing applications but not be accessible for new applications) and replaced with a new API in the same version.
+However, sometimes the API gets significantly restructured, in which case, a V2 or V3 endpoint is created. This gives the API host freedom to completely redesign their APIs without breaking
+connected apps or forcing developers of those applications to rewrite code immediately.API hosts can then decide how to manage old versions of their APIs. Usually they allow older applications
+to continue working with the old APIs for a certain period of time (usually 1–3 years) before those APIs get shut down.
