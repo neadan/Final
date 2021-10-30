@@ -1,23 +1,39 @@
 Question 1:
 What is an API?
-
+API is an application programming interface,it means API is a set of definitions and protocols that allows two application
+or two computer programme communicate with each other and send information between each other.
+ Indeed API is an application that has some data and a user can go to the endpoints and aks for the data.
+API receive the request from the client and then return responses to the user.
 
 Question 2:
 What is an endpoint?
-
+ Endpoints specify where APIs can access resources they need from a server to do their functions.
+Endpoints are URL of a server(location) where the requests for information are sent by one program to retrieve the resources
+that exist there.
 
 Question 3:
 What is a model?
-
+Model is a class that represents a table or collection in our database and where every attribute of the class is a field
+of the table or collection.
 
 Question 4:
 What is the requirements.txt file for?
-
-
+Creating a requirements.txt file make it easier for other developers to install the correct versions of the required
+python libraries or packages to run the python code that we wrote.
+*******
 Question 5: (2 part question)
 What are blueprints used for?
+Using blueprints allow us to divide our codes and make them looks better and seems nicer.In programing we don't
+want to have large and big files for sure for the computers it doesnt matter but for a programmer it is better to have divided
+codes that looks clear to understand. the Blueprint helps that application components looks more clear and organized.
+
 Is it possible to write a flask application without first defining blueprints?
+yes. it is possible to write a flask app without defining blueprints. blueprints help us to divide the application
+components in order to be more clear to understand.
 
-
+***********
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+the api in URL shows that we are using an API and V1 specifies we access to the first version of the API.
+when in API the data format or features that are return to the user are changed we create a new version of it and in the
+endpoints we can show which version of and API we use.
