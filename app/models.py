@@ -20,6 +20,19 @@ class Book:
             'author': self.name,
             'year': self.year
         }
+class Fiction(db.Model, Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
+    author = db.Column(db.String(50), nullable=False)
+    year = db.Column(db.Integer, nullable=False)
+
+
+
+class NonFiction(db.Model, Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
+    author = db.Column(db.String(50), nullable=False)
+    year = db.Column(db.Integer, nullable=False)
 
 # class Fiction here:
 

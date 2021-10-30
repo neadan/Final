@@ -1,23 +1,41 @@
 Question 1:
 What is an API?
-
+*API is an application programming interface, it is best interface for server to send and receive data by using coding.
+In easy language we can say API as waiter or a messenger, which take of your request or orders and pass ahead to the
+server.
 
 Question 2:
 What is an endpoint?
+*API work using request and responses, so when api yrequest the data from any web app or any server, then it receive a
+response and the place were API send request and resource get live thats called an endpoint. And in simple words when
+an Api interacts with another system touchpoints of particullar communication are also known as endpoints.
 
 
 Question 3:
 What is a model?
+*Model is a type of python class which inherits from the model class and model defines a new kind of datastore entity
+and the properties are expected to take. Model properties are defined using class attributes on the model class.
 
 
 Question 4:
 What is the requirements.txt file for?
+*The requirement file is mainly used for, what python packages are used to run the project that we are working on it.
+And it is very helpfull in large projects.
 
 
 Question 5: (2 part question)
 What are blueprints used for?
-Is it possible to write a flask application without first defining blueprints?
+* Blueprints is define as a collection of views, template and other elements that can be applied to an application.
+Blueprints are mainly used for supporting common patterns with an application, and blueprints can easily simplyfy the
+large application work and provide a central means to an operations of applications.
 
+Is it possible to write a flask application without first defining blueprints?
+*No, we cannot write a flask application without first defining blueprints as blueprnt is not an plug an play app as
+flask cannot run on its own blueprints, as blueprints must be registered on a flask application before use.
+As blueprint defines a collection of views templates and static assets.
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+*We usually start with /api/v1/ as it a naming convention which is use to justify multiple versions of an api. So in
+case tommorow i build an new api with some new addons or else by adding new security mechanism then i will name it v2
+because many users might be still using the V1.
