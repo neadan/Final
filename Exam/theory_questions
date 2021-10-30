@@ -1,23 +1,26 @@
 Question 1:
 What is an API?
-
+An API is a set of definitions and protocols that are used to develop and integrate application software.
 
 Question 2:
 What is an endpoint?
-
+An endpoint is a remote computing device that communicates back and forth with a network to which it is connected.
 
 Question 3:
 What is a model?
-
+A model is a Python class that inherits from the Model class. The model class defines a new data warehouse entity type and the properties that it is expected to adopt.
 
 Question 4:
 What is the requirements.txt file for?
-
+Requirement  is a type of file that generally stores information about all the libraries, modules, and packages itself that are used when developing a particular project.
 
 Question 5: (2 part question)
 What are blueprints used for?
+A Blueprint is not an application, it is a way to organize a group of related views.
 Is it possible to write a flask application without first defining blueprints?
+Yes
 
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+To make an interface friendly that allows to expose in a simple and modular way the resources of an application to be reused. Also for a security issue.
