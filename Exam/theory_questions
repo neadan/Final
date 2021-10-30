@@ -1,23 +1,32 @@
 Question 1:
 What is an API?
+An api code that allows two unrelated systems to connect, or interact
+
 
 
 Question 2:
 What is an endpoint?
-
+this is the "path" which the requesting software calls for an specific goal in mind
 
 Question 3:
 What is a model?
+A Model is the part of the app where the classes the app is going to use are defined and how they are going
+to be saved in the db
+
 
 
 Question 4:
 What is the requirements.txt file for?
+the file allows unfamiliar users or system to know what they need to install for the app to run properly
 
 
 Question 5: (2 part question)
 What are blueprints used for?
-Is it possible to write a flask application without first defining blueprints?
+They are used to organize the api, to allow for better debugging and maintenance
 
+Is it possible to write a flask application without first defining blueprints?
+Yes but it isn't consider a good practice
 
 Bonus Question:
 Why do we start all of our endpoints with /api/v1/?
+this is a good practice used for version control and good human readability
