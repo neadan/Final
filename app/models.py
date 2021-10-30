@@ -2,6 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+
 # Create both a Fiction AND a NonFiction model with the following attributes:
 # id (Integer),
 # title (String),
@@ -21,8 +22,18 @@ class Book:
             'year': self.year
         }
 
+
 # class Fiction here:
+class Fiction(db.Model, Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(68), nullable=False)
+    author = db.Column(db.String(96), nullable=False)
+    year = db.Column(db.Integer)
+
 
 # class NonFiction here:
-
-
+class NonFiction(db.Model, Book):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(68), nullable=False)
+    author = db.Column(db.String(96), nullable=False)
+    year = db.Column(db.Integer)
